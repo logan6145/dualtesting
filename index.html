@@ -3,8 +3,8 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"></script>
 <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.2/dist/aframe-extras.min.js"></script>
 <body>
-	<a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; defaultLightsEnabled: false; antialias: true;"foo>
-
+	<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: true'>
+<a-marker type="area"></a-marker>
 		<!-- handle hiro marker -->
 		<a-marker preset="hiro">
 			<a-gltf-model src="url(dualtesting/calculator.glb)">
