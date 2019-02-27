@@ -6,10 +6,11 @@
 	<a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 		<!-- handle hiro marker -->
 		<a-marker preset="hiro">
-			<a-entity gltf-model="url(dualtesting/calculator.glb)" scale="0.3 0.3 0.3">
-				</a-entity>
-      
-		</a-marker>
+	<a-assets>
+<a-asset-item id=”calcy” src=”dualtesting/calculator.glb”></a-asset-item>
+</a-assets>
+<a-gltf-model src=”#calcy” position=” 0 0 0″ scale=”0.2 0.2 0.2″></a-gltf-model>
+      </a-marker>
 
 		
 		<!-- handle kanji marker -->
